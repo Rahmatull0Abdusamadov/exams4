@@ -8,6 +8,7 @@ import img4 from '../../assets/message 1.png'
 import img9   from '../../assets/1231242112 1 (1).png'
 import img10 from '../../assets/Ellipse 311 (1).png'
 import img11 from '../../assets/information 1.png'
+
 const Services = () => {
   const {t, i18n} = useTranslation();
   function TranslateClick(lang) {

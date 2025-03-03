@@ -6,6 +6,8 @@ import img2 from '../../assets/MYbhN8KaaEc (2).png'
 import img3 from '../../assets/MYbhN8KaaEc (1).png'
 import img4 from '../../assets/MYbhN8KaaEc (5).png'
 import img5 from '../../assets/MYbhN8KaaEc (4).png'
+import img6 from '../../assets/MYbhN8KaaEc (4).png'
+import img7 from '../../assets/MYbhN8KaaEc (3).png'
 import { Link,Outlet  } from 'react-router-dom';
 const Blog = () => {
   const {t, i18n} = useTranslation();
@@ -78,7 +80,7 @@ const Blog = () => {
           </div>
         </div>
         <div className="k1">
-          <img src={img4} alt="" />
+          <img src={img6} alt="" />
           <h1>{t("Home.68")}</h1>
           <p>{t("Home.69")}</p>
           <div className="navig2">
@@ -90,7 +92,7 @@ const Blog = () => {
           </div>
         </div>
         <div className="k1">
-          <img src={img4} alt="" />
+          <img src={img7} alt="" />
           <h1>{t("Home.68")}</h1>
           <p>{t("Home.69")}</p>
           <div className="navig2">
@@ -116,7 +118,7 @@ const Blog = () => {
           </div>
         </div>
         <div className="k1">
-          <img src={img4} alt="" />
+          <img src={img6} alt="" />
           <h1>{t("Home.68")}</h1>
           <p>{t("Home.69")}</p>
           <div className="navig2">
@@ -128,7 +130,7 @@ const Blog = () => {
           </div>
         </div>
         <div className="k1">
-          <img src={img4} alt="" />
+          <img src={img7} alt="" />
           <h1>{t("Home.68")}</h1>
           <p>{t("Home.69")}</p>
           <div className="navig2">

@@ -12,11 +12,37 @@ import img8 from '../../assets/Group 370.png'
 import img9   from '../../assets/1231242112 1 (1).png'
 import img10 from '../../assets/Ellipse 311 (1).png'
 import img11 from '../../assets/information 1.png'
+import img12 from '../../assets/conversation 1.png'
+import img13 from '../../assets/analysis 1.png'
+import img14 from '../../assets/deal 1.svg'
+import img15 from '../../assets/money-bag 1.png'
+import img16 from '../../assets/Group 371.png'
+import img17 from '../../assets/Group 372.png'
+import img18 from '../../assets/Group 373.png'
 const Buyaccount = () => {
     const {t, i18n} = useTranslation();
     function TranslateClick(lang) {
         i18n.changeLanguage(lang);
     }
+    const data = [
+      { name: "Flagman_Shop", market: "US", type: "Pro Account", year: 2019, reviews: 6, ratio: "100% positive", price: "$1 000" },
+      { name: "Health Care Direct UK", market: "US", type: "Pro Account", year: 2019, reviews: 6, ratio: "100% positive", price: "$1 000" },
+      { name: "Flagman_Shop", market: "GB", type: "Pro Account", year: 2019, reviews: 6, ratio: "98% positive", price: "$1 000" },
+      { name: "Health Care Direct UK", market: "GB", type: "Pro Account", year: 2019, reviews: 6, ratio: "80% positive", price: "$1 000" },
+      { name: "Flagman_Shop", market: "US", type: "Pro Account", year: 2019, reviews: 6, ratio: "100% positive", price: "$1 000" },
+      { name: "Health Care Direct UK", market: "US", type: "Pro Account", year: 2019, reviews: 6, ratio: "100% positive", price: "$1 000" },
+      { name: "Flagman_Shop", market: "GB", type: "Pro Account", year: 2019, reviews: 6, ratio: "98% positive", price: "$1 000" },
+      { name: "Health Care Direct UK", market: "GB", type: "Pro Account", year: 2019, reviews: 6, ratio: "80% positive", price: "$1 000" },
+      { name: "Flagman_Shop", market: "US", type: "Pro Account", year: 2019, reviews: 6, ratio: "100% positive", price: "$1 000" },
+      { name: "Health Care Direct UK", market: "US", type: "Pro Account", year: 2019, reviews: 6, ratio: "100% positive", price: "$1 000" },
+      { name: "Flagman_Shop", market: "GB", type: "Pro Account", year: 2019, reviews: 6, ratio: "98% positive", price: "$1 000" },
+      { name: "Health Care Direct UK", market: "GB", type: "Pro Account", year: 2019, reviews: 6, ratio: "80% positive", price: "$1 000" },
+    ];
+    
+    const getFlag = (market) => {
+      const flags = { US: "🇺🇸", GB: "🇬🇧" };
+      return flags[market] || "";
+    };
   return (
     <div>
       <div className="main">
@@ -78,7 +104,40 @@ const Buyaccount = () => {
       </div>
    <div className='img'>
    <h1>List of aged accounts for sale</h1>
-   <img src={img2} alt="" />
+   <div className="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Business name</th>
+            <th>Market</th>
+            <th>Type</th>
+            <th>Account age</th>
+            <th>Reviews</th>
+            <th>Ratio</th>
+            <th>Price</th>
+            <th>Account Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item, index) => (
+            <tr key={index}>
+              <td>{item.name}</td>
+              <td>{getFlag(item.market)} {item.market}</td>
+              <td>{item.type}</td>
+              <td>{item.year}</td>
+              <td>{item.reviews} reviews</td>
+              <td>{item.ratio}</td>
+              <td>{item.price}</td>
+              <td className="more-info">More Info ▼</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className="buttons">
+        <button className="btn">To learn more about the process click here →</button>
+        <button className="btn">Interested in Selling Account Visit page →</button>
+      </div>
+    </div>
    </div>
    <div className="main8">
     <img className='img1' src={img3} alt="" /> 
@@ -92,14 +151,14 @@ const Buyaccount = () => {
         </div>
       </div>
       <div className="main10">
-        <img src={img4} alt="" />
+        <img src={img12} alt="" />
         <div className="main11">
           <h1>{t("Home.13")}</h1>
           <p>{t("Home.14")}</p>
         </div>
       </div>
       <div className="main10">
-        <img src={img4} alt="" />
+        <img src={img13} alt="" />
         <div className="main11">
           <h1>{t("Home.13")}</h1>
           <p>{t("Home.14")}</p>
@@ -119,14 +178,14 @@ const Buyaccount = () => {
         </div>
       </div>
       <div className="main13">
-        <img src={img6} alt="" />
+        <img src={img14} alt="" />
         <div className="main11">
           <h1>{t("Home.17")}</h1>
           <p>{t("Home.14")}</p>
         </div>
       </div>
       <div className="main13">
-        <img src={img6} alt="" />
+        <img src={img15} alt="" />
         <div className="main11">
           <h1>{t("Home.17")}</h1>
           <p>{t("Home.14")}</p>
@@ -163,17 +222,17 @@ const Buyaccount = () => {
         <p>{t("Home.26")}</p>
       </div>
       <div className="main20">
-        <img src={img8} alt="" />
+        <img src={img16} alt="" />
         <h1>{t("Home.25")}</h1>
         <p>{t("Home.26")}</p>
       </div>
       <div className="main20">
-        <img src={img8} alt="" />
+        <img src={img17} alt="" />
         <h1>{t("Home.25")}</h1>
         <p>{t("Home.26")}</p>
       </div>  
       <div className="main20">
-        <img src={img8} alt="" />
+        <img src={img18} alt="" />
         <h1>{t("Home.25")}</h1>
         <p>{t("Home.26")}</p>
       </div>

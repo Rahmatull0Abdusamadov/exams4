@@ -14,6 +14,8 @@ import img10 from '../../assets/Group 509.png'
 import img21   from '../../assets/1231242112 1 (1).png'
 import img22 from '../../assets/Ellipse 311 (1).png'
 import img23 from '../../assets/information 1.png'
+import img24 from '../../assets/phone-call (1) 1.png'
+import img25 from '../../assets/shield (4) 1.png'
 const Sellaccount = () => {
   const {t, i18n} = useTranslation();
   function TranslateClick(lang) {
@@ -45,14 +47,14 @@ const Sellaccount = () => {
             </div>
          </div>
          <div className="a1">
-          <img src={img2} alt="" />
+          <img src={img24} alt="" />
           <div className="a2">
             <h1>{t("Home.39")}</h1>
             <p>{t("Home.40")}</p>
           </div>
          </div>
          <div className="a1">
-          <img src={img2} alt="" />
+          <img src={img25} alt="" />
           <div className="a2">
             <h1>{t("Home.39")}</h1>
             <p>{t("Home.40")}</p>
